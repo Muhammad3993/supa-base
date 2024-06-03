@@ -1,0 +1,117 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: var(--qora);
+    position: fixed;
+}
+.navbar_main{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_main_img{
+    width: 140px;
+}
+.navbar_main_img img{
+    width: 100%;
+}
+.navbar_main_div{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.navbar_main_links{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.navbar_main_link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--kul);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.navbar_main_link:hover{
+    animation: anime 1s ease 1;
+}
+.navbar_active{
+    background: var(--qora2);
+    transition: .5s;
+}
+.language{
+    color: var(--oq);
+    cursor: pointer;
+}
+@keyframes anime {
+   0%{
+    transform: scale(1.1);
+   } 
+   100%{
+    transform: scale(1);
+   }
+}
+
+.navbar_link_icon{
+    font-size: 20px;
+}
+.navbar_main_sign{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.navbar_main_sign_in{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--kul);
+}
+.navbar_main_toggle{
+    color: var(--oq);
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+.navbar_main_sign_icon{
+    transform: scale(3);
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_main_links{
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background: var(--rgba);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 100px;
+        transition: .5s;
+    }
+    .active{
+        left: 0;
+    }
+    .navbar_main_link{
+        font-size: 30px;
+    }
+    .navbar_main_toggle{
+        display: flex;
+    }
+    .navbar_main_sign_span{
+        display: none;
+    }
+    .navbar_main_sign_icon{
+        display: flex;
+    }
+}

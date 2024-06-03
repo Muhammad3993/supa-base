@@ -1,0 +1,30 @@
+.builds{
+    width: 100%;
+}
+.builds_main{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.builds_main_p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--oq);
+    margin-bottom: 30px;
+}
+.text_black{
+    color: var(--qora);
+}
+@media screen and (max-width: 768px) {
+    .builds_main_btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        padding: 1rem;
+    }
+}
